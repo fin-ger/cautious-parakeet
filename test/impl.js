@@ -1,5 +1,5 @@
 var expect = require('chai').expect;
-var impl = require('../impl');
+var impl = require('../src/impl');
 
 describe("get_time", function() {
   it("should get the current time", function() {

@@ -2,7 +2,7 @@
   "name": "cautious-parakeet",
   "version": "0.1.0",
   "description": "SEAL Team 6 at work",
-  "main": "index.js",
+  "main": "src/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fin-ger/cautious-parakeet.git"
@@ -29,8 +29,8 @@
   },
   "scripts": {
     "test": "mocha --reporter spec",
-    "start": "node index.js",
     "docs": "esdoc",
-    "lint": "eslint src/index.js"
+    "lint": "eslint src/index.js",
+    "start": "node src/index.js"
   }
 }
