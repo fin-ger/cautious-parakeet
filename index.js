@@ -1,10 +1,12 @@
 const port = 8080;
 
 const express = require('express');
+const impl = require('./impl');
+
 const app = express();
 const router = new express.Router();
 router.get('/time', function(req, res) {
-  res.json({'time': Date.now() / 1000});
+  res.json({'time': impl.get_time()});
 });
 
 app.use('/api', router);
